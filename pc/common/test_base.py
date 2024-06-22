@@ -27,6 +27,8 @@ def setup_module():
     '''
 
     init_dtclientautotest()
+    if 'win' == pc.system(): # 关闭win的防火墙
+        os.system('netsh advfirewall set allprofiles state off')
 
 def write_log(content):
     log_path = os.path.join(pc.get_path_by_dirname(__file__, times=3), 'my_log.txt')
