@@ -1,1 +1,4 @@
 .idea
+*.pyc
+screenshot
+pic_cache_for_text
